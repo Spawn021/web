@@ -1,0 +1,30 @@
+<div class="mt-4">
+    <h2>Update</h2>
+    <form method="post" action="/{{blog._id}}">
+        <div class="form-group">
+            <label for="exampleInputname">Title</label>
+            <input type="text" class="form-control" id="exampleInputname" value="{{blog.title}}" name="title" aria-describedby="nameHelp"
+                >
+        </div>
+
+        <div class="form-group">
+            <label for="exampleAu">Author</label>
+            <input type="text" class="form-control" id="exampleAu" value="{{blog.author}}" name="author" aria-describedby="nameHelp">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputDes">Noi dung</label>
+            <input type="text" class="form-control" id="exampleInputDes" value="{{blog.body}}" name="body" aria-describedby="desHelp"
+                >
+        </div>
+        
+        <div class="form-group">
+            <label for="video">Link image</label>
+            <input type="text" class="form-control" id="video" value="{{blog.image}}" name="image" aria-describedby="videoHelp">
+                <img src="{{blog.image}}" alt="" class="img-fluid mx-auto d-block" style="max-width: 300px;">
+            
+        </div>
+
+        <button type="submit" class="btn btn-primary">UPDATE</button>
+    </form>
+</div>
